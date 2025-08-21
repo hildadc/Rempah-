@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rempahé — Jamu Herbal Kekinian</title>
+  <meta name="description" content="Rempahé: jamu herbal kekinian yang segar, sehat, dan nikmat.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/svg/logo.svg">
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="container">
+      <a href="#" class="brand">
+        <img src="assets/img/svg/logo.svg" alt="Rempahé logo" class="logo" />
+        <span>Rempahé</span>
+      </a>
+      <nav class="nav">
+        <a href="#best-sellers">Best Sellers</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#kritik-saran">Kritik & Saran</a>
+        <a href="#alamat">Alamat</a>
+        <button class="cart-button" id="openCart" aria-label="Buka keranjang">
+          <svg class="icon"><use href="assets/img/svg/sprite.svg#cart"/></svg>
+          <span id="cartCount" class="badge">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Racikan jamu <span class="accent">alami</span> yang <span class="accent">segar</span> & menyehatkan.</h1>
+        <p>Resep tradisional diracik modern: kunyit asam, beras kencur, temulawak, madu jahe — nikmat diminum kapan saja.</p>
+        <div class="actions">
+          <a href="#best-sellers" class="btn primary">Belanja Sekarang</a>
+          <a href="#kritik-saran" class="btn ghost">Kritik & Saran</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/img/svg/hero-herbal.svg" alt="Ilustrasi jamu herbal, daun dan botol jamu" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Sellers Slider (max 5) -->
+  <section id="best-sellers" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Produk Terlaris</h2>
+        <p>Favorit pelanggan kami — pilih, tambah ke keranjang, dan checkout 🌿</p>
+      </div>
+
+      <div class="slider" data-max="5">
+        <button class="slider-nav prev" aria-label="Sebelumnya" id="prevSlide">&#10094;</button>
+        <div class="slider-track" id="sliderTrack">
+          <!-- Cards will be injected by JS -->
+        </div>
+        <button class="slider-nav next" aria-label="Berikutnya" id="nextSlide">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimoni" class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Testimoni Pelanggan</h2>
+        <p>Suara jujur dari pelanggan setia Rempahé.</p>
+      </div>
+
+      <div id="testimonialList" class="testi-grid">
+        <!-- Initial testimonials -->
+        <article class="testi-card">
+          <img src="assets/img/svg/avatar-1.svg" alt="Avatar pelanggan" class="avatar">
+          <div>
+            <h3>@ayuherbal</h3>
+            <p>“Kunyit asamnya seger banget, rasanya natural dan bikin badan enteng!”</p>
+          </div>
+        </article>
+        <article class="testi-card">
+          <img src="assets/img/svg/avatar-2.svg" alt="Avatar pelanggan" class="avatar">
+          <div>
+            <h3>@ariffit</h3>
+            <p>“Packaging modern, rasa tradisional. Beras kencurnya juara.”</p>
+          </div>
+        </article>
+      </div>
+
+      <form id="testimonialForm" class="card form">
+        <h3>Tulis Testimoni Kamu</h3>
+        <div class="grid">
+          <label>
+            <span>Nama / Username</span>
+            <input type="text" id="tName" placeholder="cth: @username" required>
+          </label>
+          <label class="full">
+            <span>Testimoni</span>
+            <textarea id="tMessage" rows="3" placeholder="Ceritakan pengalaman kamu..." required></textarea>
+          </label>
+        </div>
+        <button type="submit" class="btn primary">Kirim Testimoni</button>
+        <p class="small muted">*Testimoni akan tampil setelah disetujui (simulasi: tampil langsung & disimpan lokal).</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Kritik & Saran -->
+  <section id="kritik-saran" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Kritik & Saran</h2>
+        <p>Bantu kami jadi lebih baik. Masukanmu berharga!</p>
+      </div>
+      <form id="feedbackForm" class="card form">
+        <div class="grid">
+          <label>
+            <span>Nama</span>
+            <input type="text" id="fName" placeholder="Nama kamu" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" id="fEmail" placeholder="email@contoh.com" required>
+          </label>
+          <label class="full">
+            <span>Pesan</span>
+            <textarea id="fMessage" rows="4" placeholder="Tulis kritik/saran..." required></textarea>
+          </label>
+        </div>
+        <button type="submit" class="btn primary">Kirim</button>
+        <p id="feedbackNote" class="small success" hidden>Terima kasih! Masukanmu tersimpan.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Cart Drawer -->
+  <aside id="cartDrawer" class="cart" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Keranjang</h3>
+      <button id="closeCart" class="icon-btn" aria-label="Tutup keranjang">&times;</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">Rp0</strong>
+      </div>
+      <button id="checkoutBtn" class="btn checkout">Checkout</button>
+    </div>
+  </aside>
+  <div id="overlay" class="overlay" hidden></div>
+
+  <!-- Address & Footer -->
+  <footer id="alamat" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Alamat Toko</h3>
+        <p>Jl. grand galaxy park, Malang</p>
+        <p class="muted small">Buka setiap hari 08.00–21.00 WIB</p>
+      </div>
+      <div>
+        <h3>Kontak</h3>
+        <p>Email: <a href="mailto:hello@rempahe.id">hello@rempahe.id</a></p>
+        <p>Instagram: <a href="https://instagram.com/rempahe" target="_blank" rel="noopener">@rempahe</a></p>
+      </div>
+      <div>
+        <h3>Tentang</h3>
+        <p>Jamu herbal kekinian berbahan rempah asli Nusantara. Diracik higienis, rasa mantap.</p>
+      </div>
+    </div>
+    <div class="container copyright">
+      <img src="assets/img/svg/logo-wordmark.svg" alt="Rempahé wordmark" class="wordmark">
+      <p>© <span id="year"></span> Rempahé. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

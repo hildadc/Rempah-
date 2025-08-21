@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff8ea"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="360" rx="24" fill="url(#bg)"/>
+  <g transform="translate(60,40)">
+    <rect x="0" y="120" width="180" height="120" rx="18" fill="#fff" stroke="#eee"/>
+    <g transform="translate(20,130)">
+      <rect x="0" y="0" width="60" height="100" rx="14" fill="#16a34a" opacity=".12" stroke="#5b3a29"/>
+      <rect x="15" y="18" width="30" height="45" rx="6" fill="#16a34a"/>
+      <circle cx="45" cy="15" r="8" fill="#5b3a29"/>
+    </g>
+    <g transform="translate(220,10)">
+      <rect x="0" y="0" width="220" height="230" rx="18" fill="#fff" stroke="#eee"/>
+      <path d="M40 160c0-28 20-44 48-44 24 0 38 9 38 24 0 29-30 47-66 47-13 0-20-11-20-27z" fill="#16a34a" opacity=".75"/>
+      <path d="M10 210h200" stroke="#ddd" stroke-width="12" stroke-linecap="round"/>
+      <g transform="translate(150,20)">
+        <path d="M0 60c22-50 60-50 90 0" fill="#e6f4ea"/>
+        <path d="M45 0c-8 10-12 18-12 24 0 10 8 18 18 18s18-8 18-18c0-6-4-14-12-24z" fill="#5b3a29"/>
+      </g>
+    </g>
+  </g>
+</svg>

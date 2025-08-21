@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="cart" viewBox="0 0 24 24">
+    <path d="M7 4h-2l-1 2v2h2l3.6 7.59-1.35 2.41A1 1 0 0 0 9 20h10v-2H9.42l1.1-2H17a1 1 0 0 0 .92-.61L21 8H7.21l-.94-2H7zM7 22a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm10 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+  </symbol>
+</svg>

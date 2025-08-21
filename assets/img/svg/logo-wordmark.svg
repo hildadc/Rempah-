@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 40">
+  <style>
+    .a{font:700 24px 'Poppins', sans-serif; fill:#ffffff}
+    .b{fill:#16a34a}
+  </style>
+  <rect width="360" height="40" rx="12" fill="#5b3a29"/>
+  <circle cx="24" cy="20" r="10" fill="#16a34a"/>
+  <text class="a" x="44" y="27">Rempahé • Jamu Herbal</text>
+  <circle class="b" cx="340" cy="12" r="3"/>
+  <circle class="b" cx="332" cy="28" r="2.5"/>
+</svg>
